@@ -1,0 +1,12 @@
+ARG NODE_VERSION=22.17
+
+FROM node:${NODE_VERSION}
+
+WORKDIR app
+
+COPY package.* .
+RUN npm install
+
+COPY . .
+
+ENTRYPOINT ["npm", "run", "dev"]

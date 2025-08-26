@@ -1,0 +1,1 @@
+export const API_ENDPOINT = "http://api:5000"
